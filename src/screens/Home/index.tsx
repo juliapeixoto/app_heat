@@ -11,8 +11,8 @@ export function Home() {
     <View style={styles.home}>
       <Header />
       <MessageList />
-      {/* <SignInBox /> */}
-      <SendMessageForm />
+      <SignInBox />
+      {/* <SendMessageForm /> */}
     </View>
   );
 }
