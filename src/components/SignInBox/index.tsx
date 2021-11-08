@@ -8,7 +8,7 @@ import { Button } from "../Button";
 import { styles } from "./styles";
 
 export function SignInBox() {
-  const { signIn } = useAuth();
+  const { signIn, isSignIn } = useAuth();
 
   return (
     <View style={styles.signin__box}>
@@ -18,6 +18,7 @@ export function SignInBox() {
         backgroundColor={COLORS.YELLOW}
         icon="github"
         onPress={signIn}
+        isLoading={isSignIn}
       />
     </View>
   );
